@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    android:gravity="center">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GreenBite"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/lightGreen"
+        android:gravity="center" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save the Flavor, Every Bite Counts"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/darkgreen"
+        android:gravity="center" />
+
+    <!-- Bottom Navigation Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="60dp"
+        android:layout_height="63dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/circular_button"
+        android:contentDescription="@string/next_button"
+        android:cropToPadding="true"
+        android:padding="10dp"
+        android:rotationX="0"
+        android:src="@drawable/arrow_right" />
+
+</LinearLayout>
